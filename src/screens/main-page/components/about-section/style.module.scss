@@ -1,0 +1,81 @@
+@import '../../../../helpers/style/variables.scss';
+
+.rootWrapper {
+    background-color: $main-background;
+    height: 100%;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 200px;
+    padding-top: 60px;
+    height: 100%;
+    > div:last-of-type {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    > p {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+    }
+    > div {
+        margin-top: 10px;
+        width: 50px;
+        height: 3px;
+        background: linear-gradient(107.87deg, #E2AC2A 28.32%, #DE7F58 34.23%, #DC6D6D 42.4%, #D960CD 50.12%, #884ECD 59.2%);
+        border-radius: 50px;
+    }
+}
+
+.infoWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    > p {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+        margin-bottom: 15px;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+.buttonWrapper {
+    transition: 0.2s;
+    width: 190px;
+    height: 60px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    background: radial-gradient(73.26% 331.96% at 96.97% 100%, rgba(79, 96, 246, 0.2) 0%, rgba(44, 50, 112, 0.2) 66.11%), rgba(79, 96, 246, 0.25);
+
+    &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 0px 10px 30px #322474;
+    }
+}

@@ -1,0 +1,70 @@
+@import '../../helpers/style/variables.scss';
+
+.rootWrapper {
+    margin-top: 91px;
+    width: 100%;
+}
+
+.mainPageHeaderWrapper {
+    height: 990px;
+    background: url('../../assets/images/main-page/main-page-layout.png') center no-repeat;
+    background-size: cover;
+}
+
+.mainPageHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.99%, #161626 90.55%);
+    
+}
+
+.headerText {
+    margin-top: 200px;
+    text-align: center;
+    > p {
+        margin: 0;
+        font-size: 80px;
+        font-weight: 500;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(17, 16, 50, 0.44);
+    }
+}
+
+.textGradient {
+    text-shadow: none;
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #E2AC2A;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(226, 172, 42, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #DE7F58, var(--tw-gradient-to, rgba(222, 127, 88, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #DC6D6D, var(--tw-gradient-to, rgba(220, 109, 109, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #D960CD, var(--tw-gradient-to, rgba(217, 96, 205, 0));
+    --tw-gradient-to: #884ECD;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.buttonWrapper {
+    margin-top: 50px;
+    transition: 0.2s;
+    width: 210px;
+    height: 60px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    background: linear-gradient(93.68deg, #6171F8 2.8%, #6F4EF2 95.64%);
+    // border: 1px solid linear-gradient(280.09deg, #4F60F6 6.86%, #20265B 80.55%);
+
+    &:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        box-shadow: 0px 10px 30px #322474;
+    }
+}
