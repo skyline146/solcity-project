@@ -48,11 +48,9 @@ export const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <a>
-                    <div className={style.buttonWrapper}>
-                        Minting Soon
-                    </div> 
-                </a>
+                <button className={style.buttonWrapper}>
+                    Minting Soon
+                </button>
             </div>
         </nav>
     )

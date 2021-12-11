@@ -21,11 +21,9 @@ export const MainPage = () => {
                         <p>First <span className={style.textGradient}>Crypto NFT City</span> that</p> 
                         <p>give you ability to earn</p>
                     </div>
-                    <a>
-                        <div className={style.buttonWrapper}>
-                            Minting Soon
-                        </div> 
-                    </a>
+                    <button className={style.buttonWrapper}>
+                        Minting Soon
+                    </button>
                 </div>
             </div>
             <Carousel dataPictures={renderCarouselItems()}/>

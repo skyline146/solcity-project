@@ -23,11 +23,9 @@ export const AboutSection = () => {
                     <img src={ImagesEnum.ABOUT_SECTION_IMG} alt="gif"/>
                 </div>
                 <div>
-                    <a>
-                        <div className={style.buttonWrapper}>
-                            Mint Soon
-                        </div> 
-                    </a>
+                    <button className={style.buttonWrapper}>
+                        Mint Soon
+                    </button>
                 </div>
             </div>
         </section>
