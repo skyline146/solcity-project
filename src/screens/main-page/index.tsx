@@ -1,4 +1,4 @@
-import { Carousel, AboutSection, LaunchSection } from './components';
+import { Carousel, AboutSection, LaunchSection, FAQSection, RoadmapSection } from './components';
 import { ImagesEnum } from '../../helpers/themes';
 
 import style from './style.module.scss';
@@ -31,6 +31,8 @@ export const MainPage = () => {
             <Carousel dataPictures={renderCarouselItems()}/>
             <AboutSection/>
             <LaunchSection/>
+            <FAQSection/>
+            <RoadmapSection/>
         </section>
     )
 }

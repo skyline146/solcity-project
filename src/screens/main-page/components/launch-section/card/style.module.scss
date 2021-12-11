@@ -1,3 +1,5 @@
+@import '../../../../../helpers/style/variables.scss';
+
 .rootWrapper {
     display: flex;
     flex-direction: column;
@@ -6,10 +8,13 @@
     padding: 30px 0px;
     width: 930px;
     max-height: 263px;
-    background: #1A1C38;
-    border: 1px solid #4F60F6;
+    background: $card-background;
+    border: 1px solid $card-border;
     border-radius: 10px;
     margin-bottom: 60px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .textWrapper {
