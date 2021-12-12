@@ -1,0 +1,36 @@
+.rootWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > p {
+        font-size: 16px;
+        color: white;
+        font-weight: 300;
+        max-width: 150px;
+        text-align: center;
+        margin-bottom: 0;
+        &:first-of-type {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &:last-of-type {
+            margin-top: 7px;
+            line-height: 24px;
+        }
+    }
+}
+
+.avatar {
+    height: 210px;
+    width: 210px;
+    border-radius: 100%;
+    background: url('../../../../../assets/images/main-page/team-section/avatar-wrapper.png') center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    > img {
+        pointer-events: none;
+    }
+}

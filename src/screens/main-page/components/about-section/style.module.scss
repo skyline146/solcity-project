@@ -24,6 +24,7 @@
     flex-direction: column;
     margin-bottom: 60px;
     > p {
+        letter-spacing: 0.03em;
         font-size: 40px;
         font-weight: 700;
         color: white;
@@ -53,6 +54,7 @@
         font-size: 16px;
         color: white;
         margin-bottom: 15px;
+        line-height: 22px;
         &:first-of-type {
             margin-top: 0;
         }

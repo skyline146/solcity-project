@@ -1,4 +1,4 @@
-import { Carousel, AboutSection, LaunchSection, FAQSection, RoadmapSection } from './components';
+import { Carousel, AboutSection, LaunchSection, FAQSection, RoadmapSection, TeamSection, DonationSection } from './components';
 import { ImagesEnum } from '../../helpers/themes';
 
 import style from './style.module.scss';
@@ -18,8 +18,7 @@ export const MainPage = () => {
             <div className={style.mainPageHeaderWrapper}>
                 <div className={style.mainPageHeader}>
                     <div className={style.headerText}>
-                        <p>First <span className={style.textGradient}>Crypto NFT City</span> that</p> 
-                        <p>give you ability to earn</p>
+                        <p>First <span className={style.textGradient}>Crypto NFT City</span> that<br/>give you ability to earn</p>
                     </div>
                     <button className={style.buttonWrapper}>
                         Minting Soon
@@ -31,6 +30,8 @@ export const MainPage = () => {
             <LaunchSection/>
             <FAQSection/>
             <RoadmapSection/>
+            <TeamSection/>
+            <DonationSection/>
         </section>
     )
 }
