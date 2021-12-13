@@ -11,40 +11,47 @@ export const Navbar = () => {
                         <img src={IconsEnum.LOGO_ICON} alt='logo icon'/>
                     </a>
                     <div className={style.navigationWrapper}>
-                        <div>
-                            <a href="home">
+                        <div className={style.linkWrapper}>
+                            <a href="#home">
                                 Home
                             </a>
+                            <div/>
                         </div>
-                        <div>
-                            <a>
+                        <div className={style.linkWrapper}>
+                            <a href='#about'>
                                 About
                             </a>
+                            <div/>
                         </div>
-                        <div>
-                            <a>
+                        <div className={style.linkWrapper}>
+                            <a href='#launch'>
                                 Launch
                             </a>
+                            <div/>
                         </div>
-                        <div>
-                            <a>
+                        <div className={style.linkWrapper}>
+                            <a href='#faq'>
                                 FAQ
                             </a>
+                            <div/>
                         </div>
-                        <div>
-                            <a>
+                        <div className={style.linkWrapper}>
+                            <a href='#roadmap'>
                                 Roadmap
                             </a>
+                            <div/>
                         </div>
-                        <div>
-                            <a>
+                        <div className={style.linkWrapper}>
+                            <a href='#team'>
                                 Team
                             </a>
+                            <div/>
                         </div>
-                        <div>
+                        <div className={style.linkWrapper}>
                             <a href="#collection">
                                 Collection
                             </a>
+                            <div/>
                         </div>
                     </div>
                 </div>
