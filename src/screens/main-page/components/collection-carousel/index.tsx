@@ -23,6 +23,7 @@ export const Carousel = ({dataPictures}:CarouselProps) => {
             <Swiper
                 spaceBetween={30}
                 slidesPerView={8}
+                className={style.carouselWrapper}
             >
                 {renderItems()}
             </Swiper>

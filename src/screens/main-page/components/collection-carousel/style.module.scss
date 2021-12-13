@@ -1,6 +1,11 @@
 @import '../../../../helpers/style/variables.scss';
 
 .rootWrapper {
+    padding-top: 91px;
+    margin-top: -91px;
+}
+
+.carouselWrapper {
     padding-left: 5px;
     padding-top: 60px;
 }
