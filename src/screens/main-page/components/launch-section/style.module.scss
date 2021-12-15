@@ -38,3 +38,15 @@
 .boldText {
     font-weight: 700;
 }
+
+@media (max-width: 426px) {
+    .contentWrapper {
+        padding-top: 80px;
+    }
+
+    .sectionTitle {
+        > p {
+            font-size: 30px;
+        }
+    }
+}
