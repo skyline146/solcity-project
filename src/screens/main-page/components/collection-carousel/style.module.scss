@@ -9,3 +9,10 @@
     padding-left: 5px;
     padding-top: 60px;
 }
+
+@media (max-width: 426px) {
+    .carouselItem {
+        width: 140px;
+        height: 140px;
+    }
+}

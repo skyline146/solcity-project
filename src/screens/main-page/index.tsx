@@ -3,7 +3,11 @@ import { ImagesEnum } from '../../helpers/themes';
 
 import style from './style.module.scss';
 
-export const MainPage = () => {
+interface IMainPageProps {
+    screenSize: number;
+}
+
+export const MainPage = ({screenSize}:IMainPageProps) => {
     const renderCarouselItems = () => {
         const arr: Array<any> = [];
         for(let i = 0; i < 20; i++) {
@@ -25,7 +29,7 @@ export const MainPage = () => {
                     </button>
                 </div>
             </div>
-            <Carousel dataPictures={renderCarouselItems()}/>
+            <Carousel dataPictures={renderCarouselItems()} screenSize={screenSize}/>
             <AboutSection/>
             <LaunchSection/>
             <FAQSection/>

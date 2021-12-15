@@ -1,17 +1,35 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { MainPage } from './main-page';
 import { Navbar, Footer } from './common';
 
 import style from './style.module.scss';
 
 function App() {
-  return (
-    <div className={style.rootWrapper}>
-      <Navbar/>
-      <MainPage/>
-      <Footer/>
-    </div>
-  );
+    const [screenSize, setScreenSize] = useState(document.documentElement.clientWidth);
+
+    useEffect(() => {
+        function handleResize() {
+            const windowInnerWidth = document.documentElement.clientWidth;
+            if (windowInnerWidth < 426) {
+                return setScreenSize(windowInnerWidth);
+            }
+            return setScreenSize(windowInnerWidth);
+        }
+        handleResize();
+        window.addEventListener("resize", handleResize);
+    
+        return function cleanup() {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
+
+    return (
+        <div className={style.rootWrapper}>
+            <Navbar/>
+            <MainPage screenSize={screenSize}/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
