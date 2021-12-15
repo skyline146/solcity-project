@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     width: 930px;
-    max-height: 263px;
+    // height: 263px;
     background: $card-background;
     border: 1px solid $card-border;
     border-radius: 10px;
@@ -81,4 +81,42 @@
 @keyframes textAppear {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@media (max-width: 426px) {
+    .rootWrapper {
+        width: 90%;
+    }
+
+    .cardHeader {
+        padding: 16px 23px 16px 16px;
+        align-items: flex-start;
+        > p {
+            margin: 0;
+        }
+        > img {
+            margin-top: 5px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .textDefault {
+        font-size: 22px;
+        max-width: 275px;
+    }
+
+    .textGradient {
+        max-width: 275px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .answerWrapper {
+        padding: 0 30px 0 16px;
+        > p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    }
 }
