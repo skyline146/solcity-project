@@ -17,7 +17,7 @@ export const DonationSection = () => {
                     </div>
                     <div className={style.imagesWrapper}>
                         <img className={style.picture1} src={ImagesEnum.DONATION_IMAGES[0]} alt="homeless"/>
-                        <img src={ImagesEnum.DONATION_IMAGES[1]} alt="homeless"/>
+                        <img className={style.picture2} src={ImagesEnum.DONATION_IMAGES[1]} alt="homeless"/>
                         <img className={style.picture3} src={ImagesEnum.DONATION_IMAGES[2]} alt="homeless"/>
                     </div>
                 </div>
