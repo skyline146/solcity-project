@@ -9,11 +9,10 @@ function App() {
 
     useEffect(() => {
         function handleResize() {
-            const windowInnerWidth = document.documentElement.clientWidth;
-            if (windowInnerWidth < 426) {
-                return setScreenSize(windowInnerWidth);
+            if (window.innerWidth < 426) {
+                return setScreenSize(window.innerWidth);
             }
-            return setScreenSize(windowInnerWidth);
+            return setScreenSize(window.innerWidth);
         }
         handleResize();
         window.addEventListener("resize", handleResize);

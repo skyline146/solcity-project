@@ -8,6 +8,8 @@ import style from './style.module.scss';
 export const Navbar = () => {
     const [active, setActive] = useState(false);
 
+    active ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible';
+
     return (
         <nav id="header" className={style.rootWrapper}>
             <div className={style.navbarWrapper}>

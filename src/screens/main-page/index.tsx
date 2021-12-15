@@ -33,8 +33,8 @@ export const MainPage = ({screenSize}:IMainPageProps) => {
             <AboutSection/>
             <LaunchSection/>
             <FAQSection/>
-            <RoadmapSection/>
-            <TeamSection/>
+            {/* <RoadmapSection/> */}
+            <TeamSection screenSize={screenSize}/>
             <DonationSection/>
         </section>
     )
