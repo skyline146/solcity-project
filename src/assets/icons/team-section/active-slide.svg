@@ -1,0 +1,15 @@
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="5" cy="5" r="4.5" fill="#4F60F6" fill-opacity="0.25"/>
+<circle cx="5" cy="5" r="4.5" fill="url(#paint0_radial_570_476)" fill-opacity="0.2"/>
+<circle cx="5" cy="5" r="4.5" stroke="url(#paint1_linear_570_476)"/>
+<defs>
+<radialGradient id="paint0_radial_570_476" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(9.69697 10) rotate(-130.527) scale(9.63767 27.1394)">
+<stop stop-color="#4F60F6"/>
+<stop offset="0.661099" stop-color="#2C3270"/>
+</radialGradient>
+<linearGradient id="paint1_linear_570_476" x1="9.81132" y1="9.20455" x2="0.934433" y2="7.62514" gradientUnits="userSpaceOnUse">
+<stop offset="0.0522374" stop-color="#4F60F6"/>
+<stop offset="1" stop-color="#20265B"/>
+</linearGradient>
+</defs>
+</svg>

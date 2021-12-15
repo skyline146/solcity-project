@@ -36,3 +36,35 @@
     justify-content: space-between;
     width: 55%;
 }
+
+.swiperWrapper {
+    width: 100%;
+}
+
+.dotsWrapper {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.swiperDot {
+    transition: 0.2s;
+    margin-right: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(120, 125, 180, 0.53);
+}
+
+.activeDot {
+    background: url('../../../../assets/icons/team-section/active-slide.svg');
+}
+
+@media (max-width: 426px) {
+    .sectionTitle {
+        > p {
+            font-size: 30px;
+        }
+    }
+}

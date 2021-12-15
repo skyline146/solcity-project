@@ -5,6 +5,7 @@ import twitter from '../../assets/icons/common/twitter-icon.svg';
 import instagram from '../../assets/icons/common/instagram-icon.svg';
 import faqCardPlus from '../../assets/icons/faq-section/plus-icon.svg';
 import faqCardMinus from '../../assets/icons/faq-section/active-dropdown-icon.svg';
+import activeSlideDot from '../../assets/icons/team-section/active-slide.svg';
 
 export const IconsEnum = Object.freeze({
     LOGO_ICON: logo,
@@ -13,5 +14,6 @@ export const IconsEnum = Object.freeze({
     TWITTER_ICON: twitter,
     INSTAGRAM_ICON: instagram,
     FAQ_CARD_PLUS: faqCardPlus,
-    FAQ_CARD_MINUS: faqCardMinus
+    FAQ_CARD_MINUS: faqCardMinus,
+    ACTIVE_SLIDE_DOT: activeSlideDot,
 });
