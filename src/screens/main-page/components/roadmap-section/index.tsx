@@ -1,9 +1,14 @@
 import { ImagesEnum } from '../../../../helpers/themes';
 import ProgressLine from './progress-line';
+import line from '../../../../assets/images/main-page/roadmap-section/vertical-line.svg';
 
 import style from './style.module.scss';
 
-export const RoadmapSection = () => {
+interface IRoadmapSectionProps {
+    screenSize: number;
+}
+
+export const RoadmapSection = ({screenSize}:IRoadmapSectionProps) => {
     return (
         <section id='roadmap' className={style.rootWrapper}>
             <div className={style.contentWrapper}>
@@ -11,49 +16,88 @@ export const RoadmapSection = () => {
                     <p>Roadmap</p>
                     <div></div>
                 </div>
-                <div className={style.imageProgress}>
-                    <div className={style.imagesRootWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img src={ImagesEnum.ROADMAP_IMAGES[0]} alt="roadmap layout"/>
+                {screenSize > 650 ?
+                    <>
+                        <div className={style.imageProgress}>
+                            <div className={style.imagesRootWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <img src={ImagesEnum.ROADMAP_IMAGES[0]} alt="roadmap layout"/>
+                                </div>
+                                <div className={style.imageWrapper}>
+                                    <img src={ImagesEnum.ROADMAP_IMAGES[1]} alt="roadmap layout"/>
+                                </div>
+                                <div className={style.imageWrapper}>
+                                    <img src={ImagesEnum.ROADMAP_IMAGES[2]} alt="roadmap layout"/>
+                                </div>
+                            </div>
+                            <ProgressLine/>
                         </div>
-                        <div className={style.imageWrapper}>
-                            <img src={ImagesEnum.ROADMAP_IMAGES[1]} alt="roadmap layout"/>
+                        <div className={style.infoWrapper}>
+                            <div className={style.listWrapper}>
+                                <ul>
+                                    <li>SolCity NFT pre-launch of 1000 NFTs with a chance to get one of 200 exclusive NFTs.</li>
+                                    <li>SolCity NFT main minting event of 8600 NFTs.</li>
+                                    <li>SolCity NFT listing on marketplaces SolSea, SolanArt, DigitalEyes, MagicEden, FTX. Buy, Sell and Trade NFTs on the best Solana NFT marketplaces.</li>
+                                </ul>
+                            </div>
+                            <div className={style.listWrapper}>
+                                <ul>
+                                    <li>Announcing the date of launching SolCity IDO Platform. Holding SolCity NFTs depending on the rearenest gives an exclusive allocation amount along with a 100% chance to participate in every new IDO.</li>
+                                    <li>SolCity $SCN token pre-sale and launch of the IDO Platform.SolCity tokens will be also used for staking.</li>
+                                    <li>Exclusive SolCity NFT merch with limited stock.</li>
+                                    <li>Updating our Roadmap.</li>
+                                </ul>
+                            </div>
+                            <div className={style.listWrapper}>
+                                <ul>
+                                    <li>Create a metaverse game with SolCity NFT as a main NFT to farm and earn in-game tokens.</li>
+                                    <li>To be continued.</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className={style.imageWrapper}>
-                            <img src={ImagesEnum.ROADMAP_IMAGES[2]} alt="roadmap layout"/>
+                    </> :
+
+                    <div className={style.mobileViewWrapper}>
+                        <div className={style.imagesRootWrapper}>
+                            <div className={style.imageWrapper}>
+                                <img src={ImagesEnum.ROADMAP_IMAGES[0]} alt="roadmap layout"/>
+                            </div>
+                            <div className={style.imageWrapper}>
+                                <img src={ImagesEnum.ROADMAP_IMAGES[1]} alt="roadmap layout"/>
+                            </div>
+                            <div className={style.imageWrapper}>
+                                <img src={ImagesEnum.ROADMAP_IMAGES[2]} alt="roadmap layout"/>
+                            </div>
                         </div>
-                        <div className={style.imageWrapper}>
-                            <img src={ImagesEnum.ROADMAP_IMAGES[3]} alt="roadmap layout"/>
+                        <img src={line} alt='line'/>
+                        <div className={style.infoWrapper}>
+                            <div className={style.listWrapper}>
+                                <div className={style.firstDate}><span>Q1 2022</span></div>
+                                <ul>
+                                    <li>SolCity NFT pre-launch of 1000 NFTs with a chance to get one of 200 exclusive NFTs.</li>
+                                    <li>SolCity NFT main minting event of 8600 NFTs.</li>
+                                    <li>SolCity NFT listing on marketplaces SolSea, SolanArt, DigitalEyes, MagicEden, FTX. Buy, Sell and Trade NFTs on the best Solana NFT marketplaces.</li>
+                                </ul>
+                            </div>
+                            <div className={style.listWrapper}>
+                                <span>Q2 2022</span>
+                                <ul>
+                                    <li>Announcing the date of launching SolCity IDO Platform. Holding SolCity NFTs depending on the rearenest gives an exclusive allocation amount along with a 100% chance to participate in every new IDO.</li>
+                                    <li>SolCity $SCN token pre-sale and launch of the IDO Platform.SolCity tokens will be also used for staking.</li>
+                                    <li>Exclusive SolCity NFT merch with limited stock.</li>
+                                    <li>Updating our Roadmap.</li>
+                                </ul>
+                            </div>
+                            <div className={style.listWrapper}>
+                                <span>Q3 2022</span>
+                                <ul>
+                                    <li>Create a metaverse game with SolCity NFT as a main NFT to farm and earn in-game tokens.</li>
+                                    <li>To be continued.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <ProgressLine/>
-                </div>
-                <div className={style.infoWrapper}>
-                    <div className={style.listWrapper}>
-                        <ul>
-                            <li>SolCity NFT 10,000 official pre-sale on Solrazr.</li>
-                            <li>NFT distribution.</li>
-                            <li>SolCity NFT listing on marketplaces SolSea, SolanArt, DigitalEyes. Buy, Sell and Trade SolCities on the best Solana NFT marketplaces.</li>
-                        </ul>
-                    </div>
-                    <div className={style.listWrapper}>
-                        <ul>
-                            <li>Holding rare SolCity NFTs gives a chance to win exclusive Solana edition SolCity NFT.</li>
-                            <li>Announcement about the SolCity NFT Staking Platform release date and SolCity token pre-sale.</li>
-                        </ul>
-                    </div>
-                    <div className={style.listWrapper}>
-                        <ul>
-                            <li>SolCity Token pre-sale and distribution. SolCity tokens will be used for staking on SolCity NFT Staking Platform.</li>
-                            <li>Exclusive SolCity NFT merch with limited stock.</li>
-                        </ul>
-                    </div>
-                    <div className={style.listWrapper}>
-                        <ul>
-                            <li>Launching SolCity NFT staking platform. SolCity NFT holders get the best staking percent depending on the rarity of their Solcity NFTs.</li>
-                        </ul>
-                    </div>
-                </div>
+                }
             </div>
         </section>
     )

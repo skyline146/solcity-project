@@ -28,7 +28,7 @@ export const TeamSection = ({screenSize}:ITeamSectionProps) => {
                     <p>Team</p>
                     <div></div>
                 </div>
-                {screenSize > 425 ?
+                {screenSize > 770 ?
                     <div className={style.cardsWrapper}>
                         <Card avatar={personInfo.dan[0]} position={personInfo.dan[1]} name={personInfo.dan[2]}/>
                         <Card avatar={personInfo.pavel[0]} position={personInfo.pavel[1]} name={personInfo.pavel[2]}/>
@@ -36,7 +36,7 @@ export const TeamSection = ({screenSize}:ITeamSectionProps) => {
                     </div> :
                     <div className={style.swiperWrapper}>
                         <Swiper
-                            spaceBetween={-135}
+                            spaceBetween={screenSize >= 580 ? -300 : -105}
                             onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex + 1)}
                         >
                             <SwiperSlide>

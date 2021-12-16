@@ -83,11 +83,13 @@
     100% { opacity: 1; }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1050px) {
     .rootWrapper {
         width: 90%;
     }
+}
 
+@media (max-width: 650px) {
     .cardHeader {
         padding: 16px 23px 16px 16px;
         align-items: flex-start;
@@ -104,12 +106,13 @@
     .textDefault {
         font-size: 22px;
         max-width: 275px;
+        font-weight: 500;
     }
 
     .textGradient {
         max-width: 275px;
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 500;
     }
 
     .answerWrapper {

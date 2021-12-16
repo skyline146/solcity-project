@@ -39,11 +39,13 @@
     font-weight: 700;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1065px) {
     .contentWrapper {
         padding-top: 80px;
     }
+}
 
+@media (max-width: 650px) {
     .sectionTitle {
         > p {
             font-size: 30px;

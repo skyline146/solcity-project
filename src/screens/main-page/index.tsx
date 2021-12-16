@@ -5,12 +5,13 @@ import style from './style.module.scss';
 
 interface IMainPageProps {
     screenSize: number;
+    screenSizeText: string;
 }
 
-export const MainPage = ({screenSize}:IMainPageProps) => {
-    const renderCarouselItems = () => {
+export const MainPage = ({screenSize, screenSizeText}:IMainPageProps) => {
+    const carouselItems = () => {
         const arr: Array<any> = [];
-        for(let i = 0; i < 20; i++) {
+        for(let i = 0; i < 12; i++) {
             arr.push(ImagesEnum.CAROUSEL_ITEM);
         }
 
@@ -29,11 +30,11 @@ export const MainPage = ({screenSize}:IMainPageProps) => {
                     </button>
                 </div>
             </div>
-            <Carousel dataPictures={renderCarouselItems()} screenSize={screenSize}/>
+            <Carousel dataPictures={carouselItems()} screenSize={screenSize} screenSizeText={screenSizeText}/>
             <AboutSection/>
             <LaunchSection/>
             <FAQSection/>
-            {/* <RoadmapSection/> */}
+            <RoadmapSection screenSize={screenSize}/>
             <TeamSection screenSize={screenSize}/>
             <DonationSection/>
         </section>
