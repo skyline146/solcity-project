@@ -45,7 +45,17 @@
     }
 }
 
+@media (max-width: 1150px) {
+    .dateWrapper {
+        width: 98%;
+    }
+}
 
+@media (max-width: 940px) {
+    .dateWrapper {
+        width: 97%;
+    }
+}
 
 // .rootWrapper {
 //     display: flex;

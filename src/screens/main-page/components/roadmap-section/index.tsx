@@ -16,7 +16,7 @@ export const RoadmapSection = ({screenSize}:IRoadmapSectionProps) => {
                     <p>Roadmap</p>
                     <div></div>
                 </div>
-                {screenSize > 650 ?
+                {screenSize > 936 ?
                     <>
                         <div className={style.imageProgress}>
                             <div className={style.imagesRootWrapper}>
@@ -80,7 +80,7 @@ export const RoadmapSection = ({screenSize}:IRoadmapSectionProps) => {
                                 </ul>
                             </div>
                             <div className={style.listWrapper}>
-                                <span>Q2 2022</span>
+                                <span className={style.secondDate}>Q2 2022</span>
                                 <ul>
                                     <li>Announcing the date of launching SolCity IDO Platform. Holding SolCity NFTs depending on the rearenest gives an exclusive allocation amount along with a 100% chance to participate in every new IDO.</li>
                                     <li>SolCity $SCN token pre-sale and launch of the IDO Platform.SolCity tokens will be also used for staking.</li>
@@ -89,7 +89,7 @@ export const RoadmapSection = ({screenSize}:IRoadmapSectionProps) => {
                                 </ul>
                             </div>
                             <div className={style.listWrapper}>
-                                <span>Q3 2022</span>
+                                <span className={style.thirdDate}>Q3 2022</span>
                                 <ul>
                                     <li>Create a metaverse game with SolCity NFT as a main NFT to farm and earn in-game tokens.</li>
                                     <li>To be continued.</li>
